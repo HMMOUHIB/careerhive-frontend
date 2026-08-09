@@ -36,8 +36,8 @@ const Index = () => {
   const addFormationRef = (el) => el && !formationRefs.current.includes(el) && formationRefs.current.push(el);
   const addCertBadgeRef = (el) => el && !certBadgeRefs.current.includes(el) && certBadgeRefs.current.push(el);
 
-  const displayFirstName = profileData?.firstName || 'Mouhib';
-  const displayLastName = profileData?.lastName || 'Hamzaoui';
+ const displayFirstName = profileData?.firstName || 'User';
+const displayLastName = profileData?.lastName || '';
   const displayPosition = profileData?.position || 'Position';
   const displayPhoto = profileData?.profilePhoto;
 
