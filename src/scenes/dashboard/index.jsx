@@ -36,8 +36,9 @@ const Index = () => {
   const addFormationRef = (el) => el && !formationRefs.current.includes(el) && formationRefs.current.push(el);
   const addCertBadgeRef = (el) => el && !certBadgeRefs.current.includes(el) && certBadgeRefs.current.push(el);
 
- const displayFirstName = profileData?.firstName || 'User';
-const displayLastName = profileData?.lastName || '';
+  const displayFirstName = profileData?.firstName || 'User';
+  const displayLastName = profileData?.lastName || '';
+  const displayFullName = [displayLastName, displayFirstName].filter(Boolean).join(' ');
   const displayPosition = profileData?.position || 'Position';
   const displayPhoto = profileData?.profilePhoto;
 
@@ -131,7 +132,7 @@ const displayLastName = profileData?.lastName || '';
               <span className="gg">Welcome</span>back!
             </p>
             <span className='name'>
-              -{displayLastName} {displayFirstName}-
+              -{displayFullName}-
             </span>
             <span>
               Your career management dashboard is ready to empower your journey. Let's make progress together!
@@ -227,7 +228,7 @@ const displayLastName = profileData?.lastName || '';
         </div>
 
         <div className='firstlast' ref={firstLastRef}>
-          <p>{displayLastName} {displayFirstName}</p>
+          <p>{displayFullName}</p>
           <span>Position : {displayPosition}</span>
           <button className="pp1btn" ref={editBtnRef} onClick={handleEditProfile}>
             <span className="pp1btn-text-one">Edit Profile</span>
