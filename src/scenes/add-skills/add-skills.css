@@ -1,0 +1,212 @@
+.add-skill-form,
+.suggestions-list {
+  background: rgba(31, 42, 64, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  transition: all 0.3s ease;
+  height: fit-content;
+}
+
+.add-skill-form:hover,
+.suggestions-list:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(76, 206, 172, 0.3);
+}
+
+.form-title {
+  color: #4cceac !important;
+  font-weight: 700 !important;
+  margin-bottom: 24px !important;
+  text-align: center;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-input,
+.category-select,
+.description-input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 8px !important;
+}
+
+.skill-input .MuiOutlinedInput-root,
+.category-select .MuiOutlinedInput-root,
+.description-input .MuiOutlinedInput-root {
+  color: #fff !important;
+}
+
+.skill-input .MuiInputLabel-root,
+.category-select .MuiInputLabel-root,
+.description-input .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.skill-input .MuiOutlinedInput-notchedOutline,
+.category-select .MuiOutlinedInput-notchedOutline,
+.description-input .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.skill-input:hover .MuiOutlinedInput-notchedOutline,
+.category-select:hover .MuiOutlinedInput-notchedOutline,
+.description-input:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(76, 206, 172, 0.5) !important;
+}
+
+.skill-level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: rgba(76, 206, 172, 0.1);
+  border-radius: 8px;
+}
+
+.skill-level .MuiTypography-root {
+  color: #fff !important;
+}
+
+.skill-level .MuiRating-root {
+  color: #4cceac !important;
+}
+
+.add-button,
+.submit-button {
+  background: linear-gradient(135deg, #4cceac, #3da58a) !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.add-button:hover,
+.submit-button:hover {
+  background: linear-gradient(135deg, #3da58a, #2e8b70) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(76, 206, 172, 0.3);
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.skills-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.skills-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.skills-list::-webkit-scrollbar-thumb {
+  background: rgba(76, 206, 172, 0.5);
+  border-radius: 3px;
+}
+
+.skill-suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #4cceac;
+  transition: all 0.3s ease;
+}
+
+.skill-suggestion:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.skill-info {
+  flex: 1;
+}
+
+.skill-info h6 {
+  color: #fff !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+}
+
+.category-chip {
+  background: rgba(76, 206, 172, 0.2) !important;
+  color: #4cceac !important;
+  margin-bottom: 8px !important;
+}
+
+.skill-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.skill-rating .MuiTypography-root {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.9rem !important;
+}
+
+.skill-description {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-style: italic;
+  margin-top: 8px !important;
+}
+
+.remove-button {
+  color: #ff6b6b !important;
+  min-width: 40px !important;
+  padding: 8px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.remove-button:hover {
+  background: rgba(255, 107, 107, 0.1) !important;
+  transform: scale(1.1);
+}
+
+.empty-message {
+  color: rgba(255, 255, 255, 0.6) !important;
+  text-align: center;
+  padding: 40px 20px;
+  font-style: italic;
+}
+
+.success-alert {
+  background: rgba(76, 206, 172, 0.9) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 25px rgba(76, 206, 172, 0.3);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .add-skill-form,
+  .suggestions-list {
+    margin-bottom: 20px;
+  }
+  
+  .skill-suggestion {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .remove-button {
+    align-self: flex-end;
+  }
+}

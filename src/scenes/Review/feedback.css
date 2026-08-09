@@ -1,0 +1,797 @@
+.upsection{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  
+    height: 100%;
+    margin-top: 10%;
+    gap: 70px
+    ;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+.header>p{
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    margin-right: 5px;
+}
+.header>span{
+    font-weight: bolder;
+    color: lightgreen;
+    font-family: Underdog;
+    font-size: 60px
+}
+.startanimation{
+    margin-top: -40px;
+    margin-left: 20px
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Gravitas+One&family=Londrina+Sketch&family=Montserrat:wght@100..900&family=Noto+Serif+Todhri&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+MX+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&family=Underdog&display=swap');
+.first-review{
+    height: 230px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 19px greenyellow;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+  
+    background-color: rgb(157, 200, 167);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.insta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sociallink{
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+   
+    gap: 40px;
+    margin-top: -20px;
+}
+.careerhive{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.careerhive>img{
+    width: 20px;
+    height: 30px; 
+    margin-right: 4px;
+}
+.careerhive>p{
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.insta>p{
+font-weight: bolder;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.insta>img{
+    width: 20px;
+    height: 30px;
+    margin-right: 4px;
+}
+.fdinfo .name{
+    font-size: 18px;
+    background-color: rgb(154, 151, 151);
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 5px;
+
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fdinfo .date{
+    color:grey;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+.fdinfo .commentaire{
+    margin-top: 0px;
+    width: 90%;
+    color: grey;
+    margin-left: 10px;
+
+}
+.fdinfo>span{
+    color: red;
+    font-size: 15px;
+    width: 90%;
+}
+.fdinfo{
+    width: 65%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.rttt{
+   
+    margin-top: -12px;
+    margin-left: 29px;
+}
+.imgs{
+    display: flex;
+   margin-left: -10px;
+ flex-direction: column;
+}
+#one{
+    rotate: -350deg;
+    border-radius: 5px;
+   border: 2px solid black;
+ 
+}
+#two{
+    rotate: 350deg;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.secand-review{
+    height: 280px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 19px rgb(59, 123, 226);
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    background-color: rgb(59, 123, 226);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+    cursor: pointer;
+
+}
+.img2>img{
+    width:90px;
+    height: 100px;
+    margin-left: -20px;
+    border-radius: 5px;
+    border: 3px solid grey;
+
+    margin-bottom: -40px;
+}
+.img2{
+    margin-left: -40px;
+display: flex;
+flex-direction: row;
+  margin-right: -10px;
+  margin-bottom: -120px;
+}
+.cmt{
+    background-color: white;
+    width: 60%;
+    border-radius: 5px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: -60px;
+    margin-top: -50px;
+    border: 4px solid grey;
+
+}
+.cmt>p{
+    margin: 0px;
+    font-size: 13px;
+   
+}
+.sociallinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    margin-bottom: -40px;
+ 
+    justify-content: center;
+    align-items: center;
+   
+}
+.ratingstart{
+    margin-top: -8px;
+    margin-bottom: 0px;
+   
+    margin-left: 60px;
+}
+.instas>p{
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    font-size: 10px;
+    }
+    .careerhives>p{
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0px;
+    }
+    .careerhives{
+       
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .careerhives>img{
+        width: 20px;
+    }
+    .instas>img{
+        width: 20px;
+       
+    }
+    .instas{
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        width: 100px;
+       
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .commentaires{
+        color: grey;
+       
+      
+        text-align: center;
+    
+    }
+    .names{
+        font-size: 15px;
+     font-weight: bolder;
+     color: white;
+        text-align: center;
+        background-color: rgb(154, 151, 151);
+        border-radius: 10px;
+        width: 63%;
+        margin-left: 5px;        
+
+
+    }
+    .dates{
+        color: grey ;
+    }
+  .links2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+  
+    margin-bottom: -44px;
+    margin-top: 50px;
+    gap: -20px;
+    margin-right: -68px;
+    align-items: center;
+
+
+  }  
+  .insta2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -13px;
+    
+  }
+  .insta2>p{
+    font-size: 10px;
+    font-weight: bolder;
+    margin-left: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  .web{
+   color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   margin-bottom: -20px;
+  }
+  .web>img{
+    width: 20px;
+    height: 20px;
+  }
+  .insta2>img{
+    width: 20px;
+    height: 20px;
+  }
+  .web>p{
+    font-size: 10px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .third-review{
+    height: 280px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 19px rgba(54, 49, 49, 0.338);
+   
+    width: 250px;
+    background-color: rgb(157, 200, 167);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  .coverPhoto {
+    width: 250px;
+    height: 200px; /* or whatever height you want */
+    position: relative;
+    overflow: hidden; /* optional, in case the image overflows */
+  }
+  
+  .coverPhoto > img {
+    width: 100%;
+    height: 75%;
+  border: 2px solid black;
+  border-radius: 5px;
+
+    object-fit: cover;
+    object-position: top; /* aligns the image to show the top part */
+    display: block;
+  }
+  .cmt2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    height: 30%;
+    margin-top: -50px;
+  }
+  .feedbacks{
+    width: 70%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+  }
+.header{
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    justify-content: center;
+}
+.namess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.namess>p{margin: 0px;
+color: white;
+width: 100px;
+align-items: center;
+text-align: center;
+background-color: grey;
+border-radius: 10px;
+margin-top: -5px;
+margin-left: -130px;
+}
+.cmt2{background-color: white;
+height: 60%;
+border: 0px 0px 10px 10px ;
+}
+.revieww{
+    color: black;
+}
+.revieww>p{
+  width: 50px;
+  color: grey;
+  font-weight: bolder;
+margin-left: -43px;
+   margin-top: -56px;
+   border-radius: 20px;
+   border: 2px solid grey;
+
+}
+.namess>span{
+    color: grey;
+    margin-left: -130px;
+    margin-bottom: 10px;
+}
+.cmtrss{
+    color: red;
+}
+.namess>h6{
+    color: grey;
+    margin-top: 0px;
+    width: 240px;
+    text-align: center;
+    font-size: 10px;
+  
+}
+.rating3{
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.cmt2{
+   border: 2px solid black;
+   border-radius: 0px 0px 10px 10px ;
+
+}
+.link3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+
+    gap: 10px;
+    margin-top: -20px;
+}
+.insta3>img{
+height: 20px;
+width: 20px;
+}
+.insta3>p{
+    font-size: 10px;
+    color:black;
+    font-weight: bold;
+}
+.web3{
+    display: flex;
+    flex-direction: row;
+}
+.insta3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.forth{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(62, 245, 255);
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(62, 245, 255) ;
+    width: 300px;
+    
+}
+.down-section{
+    display: flex;
+    flex-direction: row;
+ 
+   margin-left: 10%;
+    gap: 80px;
+    height: 100%;
+    margin-top: 10%;
+   
+    margin-top: -10px;
+    margin-bottom: 20px;
+
+}
+.profileimg>img{
+    width: 130px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.review4{
+    height: 70%;
+  width: 160px;
+  border-radius: 10px;
+
+    border: 2px solid black;
+    margin-top: 60px;
+    margin-left: -40px;
+}
+.review4{
+   background-color: white; 
+}
+.rt3{
+    margin-top:     -5px;
+    margin-left: 20px;
+
+   
+    align-items: center;
+    justify-content: center;
+}
+.name3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.zzz>p{
+    color: white;
+    width: 100px;
+    font-size: 12px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: grey;
+    font-weight: bolder;
+}
+.zzz{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px
+    ;
+}
+.zzz>span{
+    font-size: 11px;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 2px solid grey;
+    width: 40px;
+    margin-top: 1px;
+}
+.name3>span{
+    color: grey;
+    font-size: 10px;
+    margin-left: -47px;
+    margin-bottom: 0px;
+}
+.name3>h6{
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    margin: 0px;
+}
+.links4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10px;
+ 
+}
+.insta4{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -80px;
+    margin-left: -80px;
+    width: 100px;
+   
+}
+.web4{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -80px;
+    margin-left: 100px;
+    
+}
+.insta4>img{
+    width: 20px;
+    height: 20px;
+}
+.insta4>p{
+    font-size: 10px;
+    color: black;
+    font-weight: bolder;
+}
+.web4>p{
+    font-size: 10px;
+    color: black;
+    font-weight: bolder;  
+}
+.web4>img{
+    width: 20px;
+    height: 20px;   
+}
+.img5>img{
+  width: 160px;
+  border-radius: 10px 0px 0px 0px;
+  object-fit: cover;
+}
+.fifth{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(249, 249, 249);
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+.text5{
+    width: 127px;
+    border: 2px solid white;
+    height: 50%;
+ margin-top: 60px;
+ margin-left: -10px;
+ rotate: 10deg;
+ border-radius: 10px;
+ box-shadow: 0px 0px 10px white;
+}
+.insta5>p{
+    font-size: 10px;
+    font-weight: bolder;
+    color: white;
+    margin: 0px;
+
+}
+.insta5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px white;
+    border: 1px solid white;
+    width: 120px;
+
+}
+.web5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    border: 1px solid white;
+    width: 120px;
+}
+.insta5>img{
+    width: 20px ;
+    height: 20px;
+    margin-right: 3px;
+}
+.web5>p{
+    font-size: 10px;
+    font-weight: bolder;
+    color: white;
+    margin: 0px;
+    margin-left: 3px;
+ 
+}
+.web5>img{
+ width: 20px ;
+    height: 20px;
+}
+
+.links5{
+    
+}
+.infos5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+.text5>p{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+.feedback5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.feedback5>p{
+    color: white;
+    font-size: 12px;
+    margin: 0px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    width: 100px;
+    text-align: center;
+
+
+
+}
+.feedback5>span{
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    width: 100px;
+    text-align: center;
+}
+.start5{
+    margin-top: -14px;
+}
+.Six{
+    height: 300px;
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid green;
+    background-color: lightgreen;
+    border-radius: 10px;
+    box-shadow: 0px 0px 17px lightgreen;
+    box-shadow: 0px 0px 10px rgb(100, 54, 174);
+
+}
+.img6>img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: -10px;
+    rotate: 10deg;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px rgb(100, 54, 174);
+
+}
+.text6{
+    width: 60%;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px rgb(100, 54, 174);
+
+    height: 50%;
+    margin-top: 20%;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: white;
+   
+}
+.text6>p{
+    color: rgb(108, 89, 89);
+    font-size: 13px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+    border-radius: 10px;
+    width: 125px;
+    text-align: center;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+.text6>span{
+    color: grey;
+    font-weight: bolder;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3px;
+    text-align: center;
+    margin-left: 40px;
+    
+}
+.text6>h6{
+    color: grey;
+    font-size: 12px;
+    margin-top: 0px;
+    text-align: center;
+}
+.rt6{
+    margin-right: -59px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+
+}
+.social6{
+    margin-left: 20px;
+}

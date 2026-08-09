@@ -1,0 +1,57 @@
+.MMslider {
+    width: 800px;
+    padding-bottom: 370px;
+    height: 300PX;
+  margin-left: -40px;
+  cursor: pointer;
+   display: flex;
+    height: var(--height);
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+    
+  }
+  
+  .MMlist {
+    display: flex;
+    animation: scrollSlider 20s linear infinite;
+    width: max-content;
+    gap: 40px;
+  }
+  
+  .MMitem {
+    width: var(--width);
+    height: var(--height);
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  
+  .MMcard {
+    
+  
+ 
+    height: 400px;
+    padding: 15px;
+   
+    border-radius: 8px;
+   
+    color: white;
+    text-align: center;
+  }
+  
+
+  
+  @keyframes scrollSlider {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Pause on hover */
+  .MMslider:hover .MMlist {
+    animation-play-state: paused;
+  }
+  

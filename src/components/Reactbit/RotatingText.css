@@ -1,0 +1,120 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-cnt {
+  margin: 0 80px 30px 0;
+}
+
+.loader {
+  color: rgb(124, 124, 124);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  box-sizing: content-box;
+  height: 50px; /* Increased height to accommodate words */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.pp {
+  display: flex;
+  height: 100%;
+  margin-right: 10px; /* Space between button/image and words */
+  align-items: center;
+}
+
+.pp > p {
+  font-size: 15px;
+}
+
+.pp > img {
+  width: 30px;
+}
+
+.pp > button {
+  border: none;
+  width: 120px;
+  background-color: white;
+  font-size: 20px;
+}
+
+.logo {
+  margin-left: 100px;
+  margin-top: 0;
+}
+
+.words {
+  overflow: hidden;
+  height: 30px; /* Match the height of a single word */
+  position: relative;
+  display: inline-block;
+}
+
+.words-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.word {
+  height: 30px; /* Match .words height */
+  line-height: 30px; /* Center text vertically */
+  padding-left: 6px;
+  color: #956afa;
+  font-size: 18px;
+  animation: spin_4991 8s infinite ease-in-out; /* Slower and smoother animation */
+}
+
+/* Optional: Remove gradient if it obscures words */
+/*
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    white 10%,
+    transparent 30%,
+    transparent 70%,
+    white 90%
+  );
+  z-index: 20;
+}
+*/
+
+@keyframes spin_4991 {
+  0% {
+    transform: translateY(0%);
+  }
+  20% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  45% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  70% {
+    transform: translateY(-200%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  95% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}

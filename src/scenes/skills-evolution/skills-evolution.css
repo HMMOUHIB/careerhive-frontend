@@ -1,0 +1,234 @@
+.formations-section,
+.achievements-section {
+  background: rgba(31, 42, 64, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.formations-section:hover,
+.achievements-section:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(76, 206, 172, 0.3);
+}
+
+.section-title {
+  color: #4cceac !important;
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title svg {
+  color: #4cceac;
+}
+
+.formations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.formations-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.formations-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.formations-list::-webkit-scrollbar-thumb {
+  background: rgba(76, 206, 172, 0.5);
+  border-radius: 3px;
+}
+
+.formation-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 12px !important;
+  border-left: 3px solid #4cceac;
+  transition: all 0.3s ease;
+}
+
+.formation-card:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  transform: translateX(5px);
+}
+
+.formation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.formation-title {
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+}
+
+.formation-date {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.85rem !important;
+  margin-bottom: 12px !important;
+}
+
+.formation-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.formation-progress .MuiTypography-root {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.9rem !important;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px !important;
+  border-radius: 4px !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.progress-bar .MuiLinearProgress-bar {
+  background-color: #4cceac !important;
+}
+
+.formation-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-chip {
+  background: rgba(76, 206, 172, 0.2) !important;
+  color: #4cceac !important;
+  font-size: 0.75rem !important;
+}
+
+.status-chip {
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+}
+
+.status-chip.terminée {
+  background: rgba(76, 206, 172, 0.8) !important;
+  color: #fff !important;
+}
+
+.status-chip.en-cours {
+  background: rgba(255, 159, 67, 0.8) !important;
+  color: #fff !important;
+}
+
+.status-chip.planifiée {
+  background: rgba(104, 112, 250, 0.8) !important;
+  color: #fff !important;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #4cceac;
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.timeline-dot.certification {
+  background-color: #4cceac;
+}
+
+.timeline-dot.promotion {
+  background-color: #ff9f43;
+}
+
+.timeline-dot.formation {
+  background-color: #6870fa;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-title {
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  margin-bottom: 4px !important;
+}
+
+.achievement-date {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 0.8rem !important;
+  margin-bottom: 6px !important;
+}
+
+.achievement-description {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 0.85rem !important;
+  line-height: 1.4;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .formations-section,
+  .achievements-section {
+    margin-bottom: 20px;
+  }
+  
+  .formations-list {
+    max-height: 300px;
+  }
+  
+  .formation-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .section-title {
+    font-size: 1.2rem !important;
+  }
+  
+  .achievement-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .timeline-dot {
+    align-self: flex-start;
+  }
+}

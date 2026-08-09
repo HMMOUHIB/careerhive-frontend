@@ -1,0 +1,64 @@
+/* From Uiverse.io by andrew-demchenk0 */ 
+.buttonaddbtn {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+   
+    font-size: 10px;
+    background-color: #3aa856;
+  }
+  
+  .buttonaddbtn, .button__iconaddbtn, .button__textaddbtn {
+    transition: all 0.3s;
+  }
+  
+  .buttonaddbtn .button__textaddbtn {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+    margin-left: -30px;
+  }
+  
+  .buttonaddbtn .button__iconaddbtn {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 35px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buttonaddbtn .svgaddbtn {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .buttonaddbtn:hover {
+    background: #34974d;
+  }
+  
+  .buttonaddbtn:hover .button__textaddbtn {
+    color: transparent;
+  }
+  
+  .buttonaddbtn:hover .button__iconaddbtn {
+    width: 150px;
+    transform: translateX(0);
+  
+    margin-left: -6px;
+  }
+  
+  .buttonaddbtn:active .button__iconaddbtn {
+    background-color: #2e8644;
+  }
+  
+  .buttonaddbtn:active {
+    border: 1px solid #2e8644;
+  }
+  

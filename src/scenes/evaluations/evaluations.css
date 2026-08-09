@@ -1,0 +1,171 @@
+.evaluation-card {
+  background: rgba(31, 42, 64, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.evaluation-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(76, 206, 172, 0.3);
+}
+
+.evaluation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.evaluation-info {
+  flex: 1;
+}
+
+.evaluation-title {
+  color: #fff !important;
+  font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px !important;
+}
+
+.evaluation-title svg {
+  color: #4cceac;
+}
+
+.evaluation-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.overall-rating {
+  text-align: center;
+  background: rgba(76, 206, 172, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  min-width: 150px;
+}
+
+.overall-rating h6 {
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin-bottom: 8px !important;
+}
+
+.overall-rating h4 {
+  color: #4cceac !important;
+  font-weight: 700 !important;
+  margin-top: 8px !important;
+}
+
+.section-title {
+  color: #4cceac !important;
+  font-weight: 600 !important;
+  margin-bottom: 16px !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.competences-section,
+.objectives-section {
+  background: rgba(31, 42, 64, 0.5);
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+}
+
+.competence-item,
+.objective-item {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #4cceac;
+}
+
+.competence-header,
+.objective-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.competence-header .MuiTypography-root,
+.objective-header .MuiTypography-root {
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.validated-icon,
+.completed-icon {
+  color: #4cceac !important;
+  font-size: 1.2rem !important;
+}
+
+.competence-rating,
+.objective-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.competence-rating .MuiTypography-root,
+.objective-progress .MuiTypography-root {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 0.9rem !important;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px !important;
+  border-radius: 4px !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.progress-bar .MuiLinearProgress-bar {
+  background-color: #4cceac !important;
+}
+
+.feedback-section {
+  margin-top: 24px;
+  padding: 20px;
+  background: rgba(76, 206, 172, 0.1);
+  border-radius: 12px;
+  border-left: 4px solid #4cceac;
+}
+
+.feedback-text {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-style: italic;
+  line-height: 1.6 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .evaluation-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .overall-rating {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .evaluation-meta {
+    justify-content: center;
+  }
+  
+  .competences-section,
+  .objectives-section {
+    margin-bottom: 16px;
+  }
+}
