@@ -10,6 +10,9 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import GoogleIcon from '@mui/icons-material/Google';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { useAuth } from '../../context/AuthContext';
 import './AuthPage.css';
 
@@ -22,7 +25,6 @@ const AuthPage = () => {
   const [mode, setMode] = useState('signup');
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
-  const [selectedRole, setSelectedRole] = useState('student');
   const [formError, setFormError] = useState('');
 
   const containerRef = useRef(null);
@@ -125,7 +127,7 @@ const AuthPage = () => {
 
     try {
       if (mode === 'signup') {
-        await signup({ ...formData, role: selectedRole });
+        await signup({ ...formData, role: 'student' });
       } else {
         await login({ email: formData.email, password: formData.password });
       }
@@ -194,53 +196,51 @@ const AuthPage = () => {
 
           <form onSubmit={handleSubmit} className="auth-form" ref={formFieldsRef}>
             {mode === 'signup' && (
-              <>
-                <div className="auth-field">
-                  <label>Name</label>
+              <div className="auth-field">
+                <label htmlFor="auth-name">Full name</label>
+                <div className="auth-input-wrap">
+                  <PersonOutlineIcon className="auth-input-icon" />
                   <input
+                    id="auth-name"
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Your full name"
+                    placeholder="Jane Doe"
+                    autoComplete="name"
                   />
                 </div>
-
-                <div className="auth-field">
-                  <label>I am signing up as</label>
-                  <select
-                    value={selectedRole}
-                    onChange={(e) => setSelectedRole(e.target.value)}
-                    className="auth-role-select"
-                  >
-                    <option value="student">Employee</option>
-                    <option value="manager">Manager</option>
-                    <option value="hr">HR</option>
-                  </select>
-                </div>
-              </>
+              </div>
             )}
 
             <div className="auth-field">
-              <label>Email</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="you@example.com"
-              />
+              <label htmlFor="auth-email">Email</label>
+              <div className="auth-input-wrap">
+                <MailOutlineIcon className="auth-input-icon" />
+                <input
+                  id="auth-email"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="you@example.com"
+                  autoComplete="email"
+                />
+              </div>
             </div>
 
             <div className="auth-field">
-              <label>Password</label>
-              <div className="auth-password-wrap">
+              <label htmlFor="auth-password">Password</label>
+              <div className="auth-input-wrap">
+                <LockOutlinedIcon className="auth-input-icon" />
                 <input
+                  id="auth-password"
                   type={showPassword ? 'text' : 'password'}
                   name="password"
                   value={formData.password}
                   onChange={handleChange}
-                  placeholder="••••••••"
+                  placeholder="At least 6 characters"
+                  autoComplete={mode === 'signup' ? 'new-password' : 'current-password'}
                 />
                 <button
                   type="button"
@@ -271,12 +271,25 @@ const AuthPage = () => {
                 onClick={() => (window.location.href = `${API_BASE}/auth/google`)}
               >
                 <GoogleIcon />
+                <span>Google</span>
               </button>
-              <button type="button" className="auth-social-btn" aria-label="Continue with LinkedIn">
+              <button
+                type="button"
+                className="auth-social-btn"
+                aria-label="Continue with LinkedIn"
+                onClick={() => (window.location.href = `${API_BASE}/auth/linkedin`)}
+              >
                 <LinkedInIcon />
+                <span>LinkedIn</span>
               </button>
-              <button type="button" className="auth-social-btn" aria-label="Continue with GitHub">
+              <button
+                type="button"
+                className="auth-social-btn"
+                aria-label="Continue with GitHub"
+                onClick={() => (window.location.href = `${API_BASE}/auth/github`)}
+              >
                 <GitHubIcon />
+                <span>GitHub</span>
               </button>
             </div>
           </form>

@@ -1,28 +1,38 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+
+const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 const OAuthSuccess = () => {
   const navigate = useNavigate();
   const { setOAuthSession } = useAuth();
+  const handled = useRef(false);
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const token = params.get('token');
-    const userStr = params.get('user');
+    if (handled.current) return;
+    handled.current = true;
 
-    if (token && userStr) {
-      try {
-        const user = JSON.parse(decodeURIComponent(userStr));
-        setOAuthSession(token, user);
-        navigate('/');
-      } catch (err) {
-        console.error('Failed to parse OAuth user data', err);
-        navigate('/auth');
-      }
-    } else {
-      navigate('/auth');
+    const token = new URLSearchParams(window.location.search).get('token');
+    if (!token) {
+      navigate('/auth', { replace: true });
+      return;
     }
+
+    (async () => {
+      try {
+        const res = await fetch(`${API_BASE}/auth/me`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        if (!res.ok) throw new Error(`Failed to load user (${res.status})`);
+        const { user } = await res.json();
+        setOAuthSession(token, user);
+        navigate('/', { replace: true });
+      } catch (err) {
+        console.error('OAuth sign-in failed', err);
+        navigate('/auth', { replace: true });
+      }
+    })();
   }, [navigate, setOAuthSession]);
 
   return (
