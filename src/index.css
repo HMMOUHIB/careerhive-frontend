@@ -15,6 +15,11 @@ body,
   position: relative;
 }
 
+/* Let the page area shrink next to the sidebar instead of overflowing on small screens */
+.content {
+  min-width: 0;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }

@@ -38,7 +38,8 @@ const Sidebar = () => {
   const colors = tokens(theme.palette.mode);
   const { user } = useAuth();
   const role = user?.role || 'student';
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  // Start as the narrow icon rail on phones/tablets so pages keep their width
+  const [isCollapsed, setIsCollapsed] = useState(() => window.innerWidth < 900);
   const [selected, setSelected] = useState("Dashboard");
 
   const isEmployee = role === 'student';
